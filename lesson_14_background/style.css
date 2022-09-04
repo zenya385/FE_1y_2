@@ -1,0 +1,313 @@
+/* <!-- ========================= Приклад застосування ::before =============== --> */
+/* .box{
+    width: 350px;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.box::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 20px;
+    right: -20px;
+    top: 20px;
+    bottom: -20px;
+    /* background: rgb(222,18,94); */
+/* background: linear-gradient(58deg, rgba(222,18,94,1) 0%, rgba(92,145,158,0.5) 52%, rgba(39,131,32,0.7791491596638656) 100%);
+    box-shadow: -10px -10px 30px rgb(63, 57, 57);
+} */ */
+
+/* ============================= псевдоелементи================================================= */
+
+ /* .box{
+    width: 350px;
+} */
+
+/* .text::first-letter{
+font-size: 30px;
+background: teal;
+color: red;
+margin: 5px;
+padding: 5px;
+border-radius: 3px;
+} */
+
+/* .text::first-line{
+    font-size: 30px;
+    background: greenyellow;
+    color: green;
+
+
+} */
+
+/* .text::selection{
+    background: rgb(75, 122, 5);
+    color: rgb(81, 241, 81);
+
+} */
+
+/* .box::before{
+    content: "\2705";
+    font-size: 40px;
+}
+
+.box::after{
+    content: "\201e";
+    font-size: 40px;
+} */
+  /* =============================Одиниці вимірювання в CSS======================================= */
+
+/* 
+px - для пікселів;
+% - для відсотків;
+em - для визначення розміру відносно батьківського значення font-size. 
+rem - схожа на em, але замість залежності від батьківського значення, 
+      вона спирається на значення основного елементу, яким являється елемент <html>
+hv - відносно висоти екрана;
+wv - відносно ширини екрана;
+*/
+
+
+/* .text{
+    font-size: 20%;  
+}
+
+/* ======================= Собака ======================== */
+
+/* li {
+    font-size: 0.8em;
+  } */ */
+
+
+
+
+/* <!-- =============================== background-image ====================== --> */
+
+/* * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #212121;
+  }
+  
+  .tile-set {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tile {
+    padding: 10px;
+    text-align: center;
+    border: 2px dashed #2a2a2a;
+    border-radius: 4px;
+  }
+  
+  .tile:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .icon {
+    display: inline-flex;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .icon.with-bg {
+    background-color: #ff9800;
+  }
+  
+  .icon.with-icon {
+    background-image: url("https://cdn2.iconfinder.com/data/icons/avatars-60/5985/34-Father-512.png");
+  } */
+
+/* <!-- =============================== background-repeat ====================== --> */
+/* background-repeat: repeat | repeat-x | repeat-y | no-repeat */
+
+
+/* *,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   font-family: sans-serif;
+   line-height: 1.5;
+   color: #2a2a2a;
+}
+
+.container {
+   max-width: 960px;
+   padding-left: 8px;
+   padding-right: 8px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.tile-set {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding-top: 40px;
+   margin-left: -40px;
+   margin-top: -40px;
+}
+
+.tile {
+   position: relative;
+   margin-left: 40px;
+   margin-top: 40px;
+   height: 120px;
+   flex-basis: calc(100% / 2 - 40px);
+   border: 2px dashed #2a2a2a;
+   border-radius: 4px;
+   background-color: #fff;
+
+   background-image: url("https://cdn0.iconfinder.com/data/icons/essentials-volume-6/128/apple-512.png");
+   background-size: 40px;
+}
+
+.tile::before {
+   position: absolute;
+   top: -32px;
+   width: 100%;
+   content: "";
+   font-weight: 700;
+   font-size: 20px;
+   text-align: center;
+}
+
+.no-repeat {
+   background-repeat: no-repeat;
+}
+
+.no-repeat::before {
+   content: "no-repeat";
+   font-family: monospace;
+}
+
+.repeat-x {
+   background-repeat: repeat-x;
+}
+
+.repeat-x::before {
+   content: "repeat-x";
+}
+
+.repeat-y {
+   background-repeat: repeat-y;
+}
+
+.repeat-y::before {
+   content: "repeat-y";
+}
+
+.repeat {
+   background-repeat: repeat;
+}
+
+.repeat::before {
+   content: "repeat";
+} */
+
+
+/* <!-- =============================== background-position ====================== --> */
+
+
+.controls {
+  width: 100vw;
+  height: 100vh;
+  margin: 10px auto;
+  background-color: aquamarine;
+  background-repeat: no-repeat;
+  background-image: url("https://cdn0.iconfinder.com/data/icons/essentials-volume-6/128/apple-512.png");
+  /* background-position: 50% 50%; */
+}
+
+
+/* <!-- =============================== background-size ====================== --> */
+
+/* <!-- =============================== background-attachment ====================== --> */
+
+/* body {
+    margin: 0;
+  }
+  
+  .container {
+    padding: 40px;
+    background-image: url("https://cdn.pixabay.com/photo/2020/10/07/10/51/mountains-5634817_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    
+    background-attachment: fixed;
+  }
+  
+  .box {
+    height: 300px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+  }
+  
+  .box:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .box:nth-child(1) {
+    background-color: #2196f3;
+  }
+  
+  .box:nth-child(2) {
+    background-color: #4caf50;
+  }
+  
+  .box:nth-child(3) {
+    background-color: #ff9800;
+  }
+  
+  .box:nth-child(4) {
+    background-color: #e91e63;
+  } */
+
+
+/* <!-- =============================== Багатошаровий фон ====================== --> */
+body {
+  margin: 0;
+}
+
+.canvas {
+  max-width: 1000px;
+  height: 400px;
+
+  background-image: url("https://cdn-icons-png.flaticon.com/512/361/361678.png"),
+    url("https://cdn-icons-png.flaticon.com/512/4206/4206277.png"),
+    url("https://cdn-icons-png.flaticon.com/512/814/814513.png"), url('https://tlgrm.ru/_/stickers/e3a/876/e3a87689-707f-3495-b94a-8ee96e2538e5/256/61.webp'),
+    url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+
+  background-size: 180px, 100px, 150px, 130px, cover;
+  background-repeat: no-repeat;
+  background-position: top 120px right 130px, top 270px left 130px, center, 100px 60px,
+    center;
+}
+
+background: #2a2a2a;
+
+background: background-color background-image background-repeat background-position background-attachment
+
+/* <!-- =============================== background ====================== --> */
