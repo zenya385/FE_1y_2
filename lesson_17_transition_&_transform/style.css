@@ -1,4 +1,38 @@
-* {
+/* ================= transition-all ============================ */
+
+/* body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9fd;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: tomato;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: ;
+  transition-delay: 0;
+}
+
+
+.box:hover {
+  background-color: teal;
+  /* transform: rotate(180deg); */
+/* } */ 
+
+/* ======= transition-property & transition-duration ================================  */
+
+/* * {
   box-sizing: border-box;
 }
 
@@ -34,6 +68,7 @@ h1 {
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
   transition-property: transform;
+  transition-delay: 500ms;
 }
 
 .flex-container:hover .circle {
@@ -56,4 +91,160 @@ h1 {
   background-color: palevioletred;
 
   transition-duration: 3000ms;
+} */
+
+/* ======= transition-timing-function ================================  */
+
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.container {
+  border: 2px dashed #2a2a2a;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  transform: translatex(0);
+  transition-property: transform;
+  transition-duration: 2000ms;
+}
+
+.circle:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.container:hover .circle {
+  transform: translatex(calc(100vw - 86px));
+}
+
+.circle:nth-child(1) {
+  background-color: #f44336;
+  transition-timing-function: linear;
+}
+
+.circle:nth-child(2) {
+  background-color: #3f51b5;
+  transition-timing-function: ease;
+}
+
+.circle:nth-child(3) {
+  background-color: #00bcd4;
+  transition-timing-function: ease-in;
+}
+
+.circle:nth-child(4) {
+  background-color: #4caf50;
+  transition-timing-function: ease-out;
+}
+
+.circle:nth-child(5) {
+  background-color: #ffeb3b;
+  transition-timing-function: ease-in-out;
+}
+
+.circle:nth-child(6) {
+  background-color: #e91e63;
+  transition-timing-function: cubic-bezier(0.39, 1.03, 0.82, 0.08);
+} */
+
+/* ======= ВЛАСТИВІСТЬ transform ==== */
+
+/* * {box-sizing: border-box;}
+
+body {font-family: 'Playfair Display', serif; margin: 0;text-align: center}
+h1 {font-weight: normal;color: #6A5953}
+
+.wrap {
+  display: inline-block;
+  margin: 0 40px 2em 0;
+  background: rgba(228, 225, 228, .5);
+}
+div {
+  width: 170px;
+  height: 100px;
+  line-height: 100px;
+  margin: 0 auto;
+  transition: all 0.5s ease-in-out;
+}
+.one, .four, .seven, .ten {
+  background: rgba(135, 86, 120, .4);
+}
+.one:hover {
+  transform: translateX(20px);
+}
+.two, .five, .eight, .eleven {
+  background: rgba(0, 228, 246, .4);
+}
+.two:hover {
+  transform: translateY(-20px);
+}
+.three, .six, .nine {
+  background: rgba(255, 153, 0, .4);
+}
+.three:hover {
+  transform: translate(-20px, 20px);
+}
+.four:hover {
+  transform: scaleX(-1);
+}
+.five:hover {
+  transform: scaleY(1.2);
+}
+.six:hover {
+  transform: scale(1.2, 0.5);
+}
+.seven:hover {
+  transform: rotate(720deg);
+}
+.eight:hover {
+  transform: skewX(20deg);
+}
+.nine:hover {
+  transform: skewY(-20deg);
+}
+.ten:hover {
+  transform: skew(-20deg, 20deg);
+}
+.eleven:hover {
+  transform: matrix(1.2,0,0.5,1.2,50,0);
+} */
+
+/* ======= ВЛАСТИВІСТЬ animation ==== */
+
+img {
+  animation-name: spiner;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes spiner {
+  0% {
+    transform:  rotate(0deg);
+  }
+  50% {
+    transform: translate(300px, 300px)  rotate(180deg);
+  }
+
+  100% {
+    transform: translate(600px, 600px) rotate(360deg);
+  }
 }
