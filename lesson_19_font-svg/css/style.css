@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?24x64v');
-  src:  url('../fonts/icomoon.eot?24x64v#iefix') format('embedded-opentype'),
+  src: url('../fonts/icomoon.eot?24x64v');
+  src: url('../fonts/icomoon.eot?24x64v#iefix') format('embedded-opentype'),
     url('../fonts/icomoon.ttf?24x64v') format('truetype'),
     url('../fonts/icomoon.woff?24x64v') format('woff'),
     url('../fonts/icomoon.svg?24x64v#icomoon') format('svg');
@@ -10,7 +10,8 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -28,15 +29,19 @@
 .icon-nature:before {
   content: "\e900";
 }
+
 .icon-location:before {
   content: "\e901";
 }
+
 .icon-blog:before {
   content: "\e902";
 }
+
 .icon-shop:before {
   content: "\e903";
 }
+
 .icon-home:before {
   content: "\e904";
 }
