@@ -35,10 +35,12 @@ body {}
 
 .d2 {
   background: rgb(201, 61, 208);
+
 }
 
 .d3 {
   background: rgb(162, 26, 169);
+  color: white;
 }
 
 .d4 {
