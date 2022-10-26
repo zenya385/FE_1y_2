@@ -1,0 +1,9 @@
+:root {
+  --color-b: red;
+  --border-r: 4px;
+}
+
+.product-css {
+  background-color: var(--color-b);
+  border-radius: var(--border-r);
+}
