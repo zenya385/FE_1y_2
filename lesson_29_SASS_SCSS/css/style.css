@@ -1,6 +1,35 @@
 :root {
+  --color-a: rgb(168, 140, 140);
   --color-b: red;
+  --color-c: rgb(5, 54, 13);
+  --color-d: rgb(13, 29, 73);
   --border-r: 4px;
+  font-size: 20px;
+}
+
+.product-css {
+  background-color: var(--color-b);
+  border-radius: var(--border-r);
+}
+
+.product-css {
+  background-color: var(--color-с);
+  border-radius: var(--border-r);
+}
+
+.product-css {
+  background-color: var(--color-a);
+  border-radius: var(--border-r);
+}
+
+.product-css {
+  background-color: green;
+  border-radius: var(--border-r);
+}
+
+.product-css {
+  background-color: var(--color-d);
+  border-radius: var(--border-r);
 }
 
 .product-css {
