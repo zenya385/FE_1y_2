@@ -5,8 +5,9 @@
 p {
   color: green;
   display: flex;
+  justify-content: center;
 }
-$primaryColor: red;
+$primaryColor: rgb(161, 2, 2);
 body {
   $primaryColor: blue;
   // Це зовсім інша змінна, хоча і з таким самим ім'ям,
@@ -17,4 +18,7 @@ p {
   color: $primaryColor;
   // Колір тексту параграфа буде червоний,
   // використовується глобальна змінна зі значенням red.
+}
+p {
+  color: aqua;
 }

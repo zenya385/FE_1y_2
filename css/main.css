@@ -36,6 +36,7 @@
 p {
   color: green;
   display: flex;
+  justify-content: center;
 }
 
 body {
@@ -43,5 +44,9 @@ body {
 }
 
 p {
-  color: red;
+  color: rgb(161, 2, 2);
+}
+
+p {
+  color: aqua;
 }/*# sourceMappingURL=main.css.map */
