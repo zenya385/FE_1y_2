@@ -1,0 +1,20 @@
+@import "./components/footer";
+@import "./components/button.scss";
+@import "./components/heder";
+
+p {
+  color: green;
+  display: flex;
+}
+$primaryColor: red;
+body {
+  $primaryColor: blue;
+  // Це зовсім інша змінна, хоча і з таким самим ім'ям,
+  // і доступна вона тільки всередині body.
+  background: $primaryColor;
+}
+p {
+  color: $primaryColor;
+  // Колір тексту параграфа буде червоний,
+  // використовується глобальна змінна зі значенням red.
+}
