@@ -1,0 +1,34 @@
+.box {
+  border: 5px solid red;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#item {
+  font-size: 50px;
+}
+
+img[src] {
+  width: 700px;
+  height: 600px;
+}
+
+/* ================ link =============================== */
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+/* ================ link 1 =============================== */
+.link_first {
+  color: green;
+}
+
+/* ================ link 2 =============================== */
+.link-secondary {
+  color: yellow;
+}
